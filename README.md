@@ -82,12 +82,9 @@ This keeps the interrupt short and safe.
 # 5. L3g4200d Process (Sensor Layer)
 
 This process:
-
-Waits for interrupt trigger
-
-Reads X, Y, Z angular velocity using SPI
-
-Sends the data into the next CSP channel
+1. Waits for interrupt trigger
+1. Reads X, Y, Z angular velocity using SPI
+1. Sends the data into the next CSP channel
 ```cpp
 trigger_reader >> t;
 L3G4200D_ReadDPS(&gyro, &msg.x, &msg.y, &msg.z);
@@ -96,8 +93,7 @@ out << msg;
 This ensures:
 - No polling
 - No blocking in ISR
-
-Clean separation of hardware and processing
+- Clean separation of hardware and processing
 
 # 6. Shake Detection Algorithm
 
