@@ -56,8 +56,9 @@ Important:
 This project uses a **CSP (Communicating Sequential Processes)** architecture.
 
 The processing chain is:
+```text
 Interrupt (INT1) -> L3g4200d Process (Sensor Reader) -> ShakeDetect Process (Signal Processing) -> UI Process (printf output)
-
+```
 
 Each block runs as an independent CSP process.
 
@@ -87,16 +88,14 @@ Waits for interrupt trigger
 Reads X, Y, Z angular velocity using SPI
 
 Sends the data into the next CSP channel
-
+```cpp
 trigger_reader >> t;
 L3G4200D_ReadDPS(&gyro, &msg.x, &msg.y, &msg.z);
 out << msg;
-
+```
 This ensures:
-
-No polling
-
-No blocking in ISR
+- No polling
+- No blocking in ISR
 
 Clean separation of hardware and processing
 
@@ -106,42 +105,41 @@ Shake detection is based on short-term angular energy.
 
 The algorithm works as follows:
 
-Step 1 – Compute Magnitude
+## Step 1 – Compute Magnitude
 
 We calculate total angular velocity:
-
+```text
 mag = sqrt(x² + y² + z²)
-
+```
 This gives total rotational motion.
 
-Step 2 – Remove Slow Drift
+## Step 2 – Remove Slow Drift
 
 We maintain a running mean:
-
+```text  
 mean += alpha * (mag - mean)
 hp = mag - mean
-
+```
 This acts like a high-pass filter.
 
 Slow movement is removed.
 Rapid movement remains.
 
-Step 3 – Energy Calculation
+## Step 3 – Energy Calculation
 
 We accumulate squared high-pass values:
-
+```text
 energy += hp²
-
+```
 After a short time window (about 100 ms):
-
+```text
 avg_energy = energy / window_size
-Step 4 – Hysteresis Detection
+```
+## Step 4 – Hysteresis Detection
 
 Two thresholds are used:
-
-threshold_on
-
-threshold_off
+- threshold_on
+- threshold_off
 
 If energy rises above threshold_on → SHAKE detected
 If energy falls below threshold_off → Shake ended
@@ -151,75 +149,57 @@ This prevents rapid toggling.
 # 7. UI Layer
 
 The UI process prints:
-
+```text
 >>> SHAKE DETECTED! <<<
-
+```
 and
-
+```text
 Shake ended.
-
+```
 It only prints when the shake state changes.
 
 # 8. Why CSP?
 
 CSP provides:
+- Clear process separation
+- Deterministic communication
+- No shared global data
+- Zero heap (static network mode)
 
-Clear process separation
-
-Deterministic communication
-
-No shared global data
-
-Zero heap (static network mode)
-
-This is excellent practice for real-time embedded systems.
+This is good practice for real-time embedded systems.
 
 # 9. Learning Outcomes
-
 This project demonstrates:
-
-External interrupt handling
-
-SPI communication
-
-Interrupt-to-task synchronization
-
-Real-time signal processing
-
-State machine design
-
-CSP-based architecture
-
-Hysteresis thresholding
+- External interrupt handling
+- SPI communication
+- Interrupt-to-task synchronization
+- Real-time signal processing
+- State machine design
+- CSP-based architecture
+- Hysteresis thresholding
 
 # 10. How To Build
 
-Open project in STM32CubeIDE
-
-Build
-
-Flash to NUCLEO-F401RE
-
-Open serial terminal (115200 baud)
-
-Shake the board
+1. Open project in STM32CubeIDE
+1. Build
+1. Flash to NUCLEO-F401RE
+1. Open serial terminal (115200 baud)
+1. Shake the board
 
 # 11. Example Output
+```text
 --- Launching CSP Static Network (Zero-Heap) ---
 >>> SHAKE DETECTED! <<<
 Shake ended.
 >>> SHAKE DETECTED! <<<
+```
+
 # 12. Possible Extensions
-
-Multi-level shake intensity
-
-CSV streaming for plotting
-
-Fixed-point implementation
-
-LED indicator instead of printf
-
-Machine learning classification
+- Multi-level shake intensity
+- CSV streaming for plotting
+- Fixed-point implementation
+- LED indicator instead of printf
+- Machine learning classification
 
 # Author
 Oliver Faust
