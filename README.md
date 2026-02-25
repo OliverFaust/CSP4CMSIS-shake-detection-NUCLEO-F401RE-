@@ -42,7 +42,7 @@ This project uses **SPI3** on the NUCLEO-F401RE.
 | MISO     | PC11      | SPI3 MISO |
 | MOSI     | PC12      | SPI3 MOSI |
 | CS       | PB12      | Chip Select (software controlled) |
-| INT1     | PA1       | Data Ready Interrupt (EXTI) |
+| INT2     | PA1       | Data Ready Interrupt (EXTI) |
 
 Important:
 - SPI is configured in master mode.
