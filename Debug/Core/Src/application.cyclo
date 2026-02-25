@@ -1,0 +1,153 @@
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/process.h:32:29:virtual const char* csp::CSProcess::name() const	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/process.h:39:22:virtual void csp::CSProcess::endProcess()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt.h:23:15:constexpr csp::internal::Guard::Guard()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt.h:28:21:csp::internal::Guard::~Guard()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt.h:28:21:virtual csp::internal::Guard::~Guard()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:72:14:void csp::internal::AltChanSyncBase::clearWaitingIn()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:76:27:QueueDefinition* csp::internal::AltChanSyncBase::getMutex()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:77:22:tskTaskControlBlock* csp::internal::AltChanSyncBase::getWaitingInTask() const	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:78:22:tskTaskControlBlock* csp::internal::AltChanSyncBase::getWaitingOutTask() const	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:79:15:void* csp::internal::AltChanSyncBase::getNonAltInDataPtr() const	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:82:23:csp::internal::AltScheduler* csp::internal::AltChanSyncBase::getAltInScheduler() const	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:83:23:EventBits_t csp::internal::AltChanSyncBase::getAltInBit() const	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:84:23:csp::internal::AltScheduler* csp::internal::AltChanSyncBase::getAltOutScheduler() const	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:85:23:EventBits_t csp::internal::AltChanSyncBase::getAltOutBit() const	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:101:9:csp::internal::ChanInGuard::ChanInGuard(csp::internal::AltChanSyncBase*, void*, size_t)	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:107:14:void csp::internal::ChanInGuard::updateBuffer(void*)	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:116:9:csp::internal::ChanOutGuard::ChanOutGuard(csp::internal::AltChanSyncBase*, const void*, size_t)	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:122:14:void csp::internal::ChanOutGuard::updateBuffer(const void*)	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:31:24:csp::internal::BaseChan<DATA_TYPE>::~BaseChan() [with DATA_TYPE = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:31:24:csp::internal::BaseChan<DATA_TYPE>::~BaseChan() [with DATA_TYPE = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:57:24:csp::internal::BaseAltChan<DATA_TYPE>::~BaseAltChan() [with DATA_TYPE = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:57:24:csp::internal::BaseAltChan<DATA_TYPE>::~BaseAltChan() [with DATA_TYPE = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:95:11:csp::internal::ChanInGuard::~ChanInGuard()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:95:11:virtual csp::internal::ChanInGuard::~ChanInGuard()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:110:11:csp::internal::ChanOutGuard::~ChanOutGuard()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt_channel_sync.h:110:11:virtual csp::internal::ChanOutGuard::~ChanOutGuard()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:25:13:csp::internal::RendezvousChannel<T>::~RendezvousChannel() [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:25:13:csp::internal::RendezvousChannel<T>::~RendezvousChannel() [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:91:5:csp::One2OneChannel<T>::One2OneChannel() [with T = trigger_t]	1
+../Core/Src/application.cpp:28:17:void HAL_GPIO_EXTI_Callback(uint16_t)	3
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/process.h:24:11:constexpr csp::CSProcess::CSProcess()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/process.h:26:17:csp::CSProcess::~CSProcess()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/process.h:26:17:virtual csp::CSProcess::~CSProcess()	1
+../Core/Src/application.cpp:41:2:L3g4200d::L3g4200d(csp::Chanout<Message>)	1
+../Core/Src/application.cpp:43:10:virtual void L3g4200d::run()	3
+../Core/Src/application.cpp:77:5:ShakeDetect::ShakeDetect(csp::Chanin<Message>, csp::Chanout<Result>)	1
+../Core/Src/application.cpp:80:10:virtual void ShakeDetect::run()	6
+../Core/Src/application.cpp:141:5:UI::UI(csp::Chanin<Result>)	1
+../Core/Src/application.cpp:143:10:virtual void UI::run()	2
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:31:24:csp::internal::BaseChan<DATA_TYPE>::~BaseChan() [with DATA_TYPE = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:31:24:csp::internal::BaseChan<DATA_TYPE>::~BaseChan() [with DATA_TYPE = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:57:24:csp::internal::BaseAltChan<DATA_TYPE>::~BaseAltChan() [with DATA_TYPE = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:57:24:csp::internal::BaseAltChan<DATA_TYPE>::~BaseAltChan() [with DATA_TYPE = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:25:13:csp::internal::RendezvousChannel<T>::~RendezvousChannel() [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:25:13:csp::internal::RendezvousChannel<T>::~RendezvousChannel() [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:91:5:csp::One2OneChannel<T>::One2OneChannel() [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:87:7:csp::One2OneChannel<Message>::~One2OneChannel()	1
+../Core/Src/application.cpp:164:30:void __tcf_0()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:31:24:csp::internal::BaseChan<DATA_TYPE>::~BaseChan() [with DATA_TYPE = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:31:24:csp::internal::BaseChan<DATA_TYPE>::~BaseChan() [with DATA_TYPE = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:57:24:csp::internal::BaseAltChan<DATA_TYPE>::~BaseAltChan() [with DATA_TYPE = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:57:24:csp::internal::BaseAltChan<DATA_TYPE>::~BaseAltChan() [with DATA_TYPE = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:25:13:csp::internal::RendezvousChannel<T>::~RendezvousChannel() [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:25:13:csp::internal::RendezvousChannel<T>::~RendezvousChannel() [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:91:5:csp::One2OneChannel<T>::One2OneChannel() [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:87:7:csp::One2OneChannel<Result>::~One2OneChannel()	1
+../Core/Src/application.cpp:165:28:void __tcf_1()	1
+../Core/Src/application.cpp:37:7:L3g4200d::~L3g4200d()	1
+../Core/Src/application.cpp:37:7:virtual L3g4200d::~L3g4200d()	1
+../Core/Src/application.cpp:167:48:void __tcf_2()	1
+../Core/Src/application.cpp:71:7:ShakeDetect::~ShakeDetect()	1
+../Core/Src/application.cpp:71:7:virtual ShakeDetect::~ShakeDetect()	1
+../Core/Src/application.cpp:168:76:void __tcf_3()	1
+../Core/Src/application.cpp:136:7:UI::~UI()	1
+../Core/Src/application.cpp:136:7:virtual UI::~UI()	1
+../Core/Src/application.cpp:169:39:void __tcf_4()	1
+../Core/Src/application.cpp:159:6:void MainApp_Task(void*)	11
+../Core/Src/application.cpp:178:6:void csp_app_main_init()	2
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:21:11:constexpr csp::internal::BaseChan<trigger_t>::BaseChan()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:44:11:constexpr csp::internal::BaseAltChan<trigger_t>::BaseAltChan()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:21:5:csp::internal::RendezvousChannel<T>::RendezvousChannel() [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:93:16:csp::Chanout<T> csp::One2OneChannel<T>::writer() [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:48:10:bool csp::Chanout<T>::putFromISR(const T&) [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:94:15:csp::Chanin<T> csp::One2OneChannel<T>::reader() [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:68:10:void csp::Chanin<T>::operator>>(T&) [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:41:10:void csp::Chanout<T>::operator<<(const T&) [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:68:10:void csp::Chanin<T>::operator>>(T&) [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:41:10:void csp::Chanout<T>::operator<<(const T&) [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:68:10:void csp::Chanin<T>::operator>>(T&) [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:21:11:constexpr csp::internal::BaseChan<Message>::BaseChan()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:44:11:constexpr csp::internal::BaseAltChan<Message>::BaseAltChan()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:21:5:csp::internal::RendezvousChannel<T>::RendezvousChannel() [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:21:11:constexpr csp::internal::BaseChan<Result>::BaseChan()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:44:11:constexpr csp::internal::BaseAltChan<Result>::BaseAltChan()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:21:5:csp::internal::RendezvousChannel<T>::RendezvousChannel() [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:93:16:csp::Chanout<T> csp::One2OneChannel<T>::writer() [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:94:15:csp::Chanin<T> csp::One2OneChannel<T>::reader() [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:93:16:csp::Chanout<T> csp::One2OneChannel<T>::writer() [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:94:15:csp::Chanin<T> csp::One2OneChannel<T>::reader() [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/run.h:126:30:) [with Processes = {L3g4200d, ShakeDetect, UI}]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/run.h:138:6:>, ExecutionMode) [with Processes = {L3g4200d, ShakeDetect, UI}]	2
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:38:5:csp::Chanout<T>::Chanout(csp::internal::BaseAltChan<T>*) [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:65:5:csp::Chanin<T>::Chanin(csp::internal::BaseAltChan<T>*) [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:38:5:csp::Chanout<T>::Chanout(csp::internal::BaseAltChan<T>*) [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:65:5:csp::Chanin<T>::Chanin(csp::internal::BaseAltChan<T>*) [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:38:5:csp::Chanout<T>::Chanout(csp::internal::BaseAltChan<T>*) [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:65:5:csp::Chanin<T>::Chanin(csp::internal::BaseAltChan<T>*) [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/run.h:78:14:) [with Processes = {L3g4200d, ShakeDetect, UI}]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/run.h:102:10:void csp::ParallelHelper<Processes>::execute_static(UBaseType_t) [with Processes = {L3g4200d, ShakeDetect, UI}]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/run.h:81:10:void csp::ParallelHelper<Processes>::execute_terminating(UBaseType_t) [with Processes = {L3g4200d, ShakeDetect, UI}]	3
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:874:2:>(), bool>::type <anonymous> = true; _Elements = {L3g4200d&, ShakeDetect&, UI&}]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/run.h:61:10:void csp::ParallelHelper<Processes>::spawn_others(SemaphoreHandle_t, UBaseType_t) [with unsigned int I = 1; Processes = {L3g4200d, ShakeDetect, UI}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:1803:5:>&) [with unsigned int __i = 0; _Elements = {L3g4200d&, ShakeDetect&, UI&}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:284:7:) [with unsigned int _Idx = 0; _Head = L3g4200d&; _Tail = {ShakeDetect&, UI&}]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/run.h:45:10:void csp::ParallelHelper<Processes>::spawn_task(SemaphoreHandle_t, UBaseType_t) [with unsigned int I = 1; Processes = {L3g4200d, ShakeDetect, UI}]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/run.h:61:10:void csp::ParallelHelper<Processes>::spawn_others(SemaphoreHandle_t, UBaseType_t) [with unsigned int I = 2; Processes = {L3g4200d, ShakeDetect, UI}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:1787:5:>&) [with unsigned int __i = 0; _Head = L3g4200d&; _Tail = {ShakeDetect&, UI&}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:284:7:) [with unsigned int _Idx = 1; _Head = ShakeDetect&; _Tail = {UI&}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:193:17:constexpr std::_Head_base<_Idx, _Head, false>::_Head_base(const _Head&) [with unsigned int _Idx = 0; _Head = L3g4200d&]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:1803:5:>&) [with unsigned int __i = 1; _Elements = {L3g4200d&, ShakeDetect&, UI&}]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/run.h:45:10:void csp::ParallelHelper<Processes>::spawn_task(SemaphoreHandle_t, UBaseType_t) [with unsigned int I = 2; Processes = {L3g4200d, ShakeDetect, UI}]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/run.h:61:10:void csp::ParallelHelper<Processes>::spawn_others(SemaphoreHandle_t, UBaseType_t) [with unsigned int I = 3; Processes = {L3g4200d, ShakeDetect, UI}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:269:7:>&) [with unsigned int _Idx = 0; _Head = L3g4200d&; _Tail = {ShakeDetect&, UI&}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:507:7:constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl(const _Head&) [with unsigned int _Idx = 2; _Head = UI&]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:193:17:constexpr std::_Head_base<_Idx, _Head, false>::_Head_base(const _Head&) [with unsigned int _Idx = 1; _Head = ShakeDetect&]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:1787:5:>&) [with unsigned int __i = 1; _Head = ShakeDetect&; _Tail = {UI&}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:1803:5:>&) [with unsigned int __i = 2; _Elements = {L3g4200d&, ShakeDetect&, UI&}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:234:7:static constexpr _Head& std::_Head_base<_Idx, _Head, false>::_M_head(std::_Head_base<_Idx, _Head, false>&) [with unsigned int _Idx = 0; _Head = L3g4200d&]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:193:17:constexpr std::_Head_base<_Idx, _Head, false>::_Head_base(const _Head&) [with unsigned int _Idx = 2; _Head = UI&]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:269:7:>&) [with unsigned int _Idx = 1; _Head = ShakeDetect&; _Tail = {UI&}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:1787:5:>&) [with unsigned int __i = 2; _Head = UI&; _Tail = {}]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:234:7:static constexpr _Head& std::_Head_base<_Idx, _Head, false>::_M_head(std::_Head_base<_Idx, _Head, false>&) [with unsigned int _Idx = 1; _Head = ShakeDetect&]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:497:7:static constexpr _Head& std::_Tuple_impl<_Idx, _Head>::_M_head(std::_Tuple_impl<_Idx, _Head>&) [with unsigned int _Idx = 2; _Head = UI&]	1
+/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/arm-none-eabi/include/c++/13.3.1/tuple:234:7:static constexpr _Head& std::_Head_base<_Idx, _Head, false>::_M_head(std::_Head_base<_Idx, _Head, false>&) [with unsigned int _Idx = 2; _Head = UI&]	1
+../Core/Src/application.cpp:183:1:void __static_initialization_and_destruction_0()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/public_channel.h:87:7:csp::One2OneChannel<trigger_t>::~One2OneChannel()	1
+../Core/Src/application.cpp:183:1:void __static_initialization_and_destruction_1()	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:28:18:void csp::internal::RendezvousChannel<T>::input(T*) [with T = Result]	4
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:53:18:void csp::internal::RendezvousChannel<T>::output(const T*) [with T = Result]	4
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:142:18:void csp::internal::RendezvousChannel<T>::beginExtInput(T*) [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:143:18:void csp::internal::RendezvousChannel<T>::endExtInput() [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:96:18:bool csp::internal::RendezvousChannel<T>::pending() [with T = Result]	6
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:109:18:bool csp::internal::RendezvousChannel<T>::putFromISR(const T&) [with T = Result]	4
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:86:30:csp::internal::Guard* csp::internal::RendezvousChannel<T>::getInputGuard(T&) [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:91:30:csp::internal::Guard* csp::internal::RendezvousChannel<T>::getOutputGuard(const T&) [with T = Result]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:28:18:void csp::internal::RendezvousChannel<T>::input(T*) [with T = Message]	4
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:53:18:void csp::internal::RendezvousChannel<T>::output(const T*) [with T = Message]	4
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:142:18:void csp::internal::RendezvousChannel<T>::beginExtInput(T*) [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:143:18:void csp::internal::RendezvousChannel<T>::endExtInput() [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:96:18:bool csp::internal::RendezvousChannel<T>::pending() [with T = Message]	6
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:109:18:bool csp::internal::RendezvousChannel<T>::putFromISR(const T&) [with T = Message]	4
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:86:30:csp::internal::Guard* csp::internal::RendezvousChannel<T>::getInputGuard(T&) [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:91:30:csp::internal::Guard* csp::internal::RendezvousChannel<T>::getOutputGuard(const T&) [with T = Message]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:28:18:void csp::internal::RendezvousChannel<T>::input(T*) [with T = trigger_t]	4
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:53:18:void csp::internal::RendezvousChannel<T>::output(const T*) [with T = trigger_t]	4
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:142:18:void csp::internal::RendezvousChannel<T>::beginExtInput(T*) [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:143:18:void csp::internal::RendezvousChannel<T>::endExtInput() [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:96:18:bool csp::internal::RendezvousChannel<T>::pending() [with T = trigger_t]	6
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:109:18:bool csp::internal::RendezvousChannel<T>::putFromISR(const T&) [with T = trigger_t]	4
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:86:30:csp::internal::Guard* csp::internal::RendezvousChannel<T>::getInputGuard(T&) [with T = trigger_t]	1
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/rendezvous_channel.h:91:30:csp::internal::Guard* csp::internal::RendezvousChannel<T>::getOutputGuard(const T&) [with T = trigger_t]	1
+../Core/Src/application.cpp:183:1:cpp)	1
+../Core/Src/application.cpp:183:1:cpp)	1

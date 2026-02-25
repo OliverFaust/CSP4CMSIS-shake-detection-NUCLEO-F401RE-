@@ -1,0 +1,42 @@
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt.h:41:32:EventGroupDef_t* csp::internal::AltScheduler::getEventGroupHandle() const	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt.h:23:15:constexpr csp::internal::Guard::Guard()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt.h:28:21:csp::internal::Guard::~Guard()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/alt.h:28:21:virtual csp::internal::Guard::~Guard()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:21:9:csp::internal::SyncChannelInputGuard::SyncChannelInputGuard(csp::internal::SyncChannel*)	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:35:9:csp::internal::SyncChannelOutputGuard::SyncChannelOutputGuard(csp::internal::SyncChannel*)	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:70:16:virtual csp::internal::Guard* csp::internal::SyncChannel::getInputGuard()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:71:16:virtual csp::internal::Guard* csp::internal::SyncChannel::getOutputGuard()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:75:14:virtual void csp::internal::SyncChannel::beginExtInput(void*)	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:76:14:virtual void csp::internal::SyncChannel::endExtInput()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:83:27:QueueDefinition* csp::internal::SyncChannel::getMutex()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:84:15:csp::internal::SyncChannel::State csp::internal::SyncChannel::getState()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:85:21:const void* csp::internal::SyncChannel::getDataPtr()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:86:23:QueueDefinition* csp::internal::SyncChannel::getSenderQueue()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:87:23:QueueDefinition* csp::internal::SyncChannel::getReceiverQueue()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:88:14:void csp::internal::SyncChannel::setChannelData(const void*, size_t)	24	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:21:11:constexpr csp::internal::BaseChan<void>::BaseChan()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:31:24:csp::internal::BaseChan<DATA_TYPE>::~BaseChan() [with DATA_TYPE = void]	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:31:24:csp::internal::BaseChan<DATA_TYPE>::~BaseChan() [with DATA_TYPE = void]	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:66:11:constexpr csp::internal::BaseAltChan<void>::BaseAltChan()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:66:11:csp::internal::BaseAltChan<void>::~BaseAltChan()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/channel_base.h:66:11:virtual csp::internal::BaseAltChan<void>::~BaseAltChan()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:14:11:csp::internal::SyncChannelInputGuard::~SyncChannelInputGuard()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:14:11:virtual csp::internal::SyncChannelInputGuard::~SyncChannelInputGuard()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:28:11:csp::internal::SyncChannelOutputGuard::~SyncChannelOutputGuard()	16	static
+/home/oliver/GitHub/SPI3-NUCLEO-F401RE/lib/CSP4CMSIS/include/csp/sync_channel.h:28:11:virtual csp::internal::SyncChannelOutputGuard::~SyncChannelOutputGuard()	16	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:14:1:csp::internal::SyncChannel::SyncChannel()	16	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:31:1:csp::internal::SyncChannel::~SyncChannel()	16	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:31:1:virtual csp::internal::SyncChannel::~SyncChannel()	16	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:37:6:void csp::internal::SyncChannel::reset()	16	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:50:6:virtual void csp::internal::SyncChannel::output(const void*)	32	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:87:6:virtual void csp::internal::SyncChannel::input(void*)	32	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:135:6:bool csp::internal::SyncChannel::registerAltIn(csp::internal::AltScheduler*, EventBits_t, csp::internal::SyncChannelInputGuard*)	24	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:151:6:bool csp::internal::SyncChannel::unregisterAltIn(csp::internal::AltScheduler*)	24	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:159:6:bool csp::internal::SyncChannel::registerAltOut(csp::internal::AltScheduler*, EventBits_t, csp::internal::SyncChannelOutputGuard*)	24	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:175:6:bool csp::internal::SyncChannel::unregisterAltOut(csp::internal::AltScheduler*)	24	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:189:6:virtual bool csp::internal::SyncChannelInputGuard::enable(csp::internal::AltScheduler*, EventBits_t)	24	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:194:6:virtual bool csp::internal::SyncChannelInputGuard::disable()	16	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:198:6:virtual void csp::internal::SyncChannelInputGuard::activate()	24	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:213:6:virtual bool csp::internal::SyncChannelOutputGuard::enable(csp::internal::AltScheduler*, EventBits_t)	24	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:218:6:virtual bool csp::internal::SyncChannelOutputGuard::disable()	16	static
+../lib/CSP4CMSIS/src/sync_channel.cpp:222:6:virtual void csp::internal::SyncChannelOutputGuard::activate()	16	static
