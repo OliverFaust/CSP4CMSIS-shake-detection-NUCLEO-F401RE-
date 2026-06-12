@@ -1,6 +1,6 @@
 # ShakeDetect: Formal Model (CSP-M)
 
-This directory contains the formal **Communicating Sequential Processes (CSP)** model for the real-time gyroscope shake detection pipeline. The specification is written in machine-readable CSP-M and is configured for animation and verification using the **ProB** model checker.
+This directory contains the formal **Communicating Sequential Processes (CSP)** model for the real-time gyroscope shake detection pipeline. The specification is written in machine-readable CSP-M and is configured for animation and verification using the [ProB](https://prob.hhu.de/ model checker).
 
 While the main repository contains the production C++ source code and hardware-specific drivers (SPI, interrupts), this subdirectory isolates the algorithmic and logical core to mathematically verify its deterministic behavior, lack of deadlocks, and synchronization rules.
 
