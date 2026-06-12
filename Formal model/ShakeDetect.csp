@@ -1,0 +1,124 @@
+-- ShakeDetect
+-- =========================================================
+-- Constants and System Parameters
+-- =========================================================
+WINDOW_SIZE = 3
+
+-- Represents alpha for exponential moving average (e.g., 1/10 = 0.1)
+ALPHA_NUM = 1
+ALPHA_DEN = 5
+
+-- Hysteresis thresholds
+THRESHOLD_ON = 8
+THRESHOLD_OFF = 3
+
+-- Bounding the maximum reading value to prevent ProB state explosion
+MAX_VAL = 2
+
+-- =========================================================
+-- Channels
+-- =========================================================
+channel g_trigger_chan
+channel msg_chan : Int.Int.Int
+channel result_chan : Int     -- 1 represents 1.0, 0 represents 0.0
+channel print_ : Int
+
+-- =========================================================
+-- Abstracted Functions
+-- =========================================================
+-- Standard CSP-M lacks a built-in square root. 
+-- We provide a dummy pass-through here to satisfy the syntax.
+sqrt(v) = v 
+
+-- =========================================================
+-- Environment Process (ISR)
+-- =========================================================
+-- Unbounded sequence of trigger events
+ENV = g_trigger_chan -> ENV
+
+-- =========================================================
+-- Sensor Reader Process (L3g4200d)
+-- =========================================================
+-- Waits for a trigger, non-deterministically generates reading 
+-- triples within bounds, and outputs them to the message channel.
+L3g4200d = 
+    g_trigger_chan ->
+    (
+        |~| x : {0..MAX_VAL} @
+        |~| y : {0..MAX_VAL} @
+        |~| z : {0..MAX_VAL} @
+            msg_chan!x!y!z -> L3g4200d
+    )
+
+-- =========================================================
+-- Shake Detection Process
+-- =========================================================
+ShakeDetect(mean, energy, count, shake) =
+    msg_chan?x?y?z ->
+    let
+        m = sqrt(x*x + y*y + z*z)
+        m_bar = mean + (ALPHA_NUM * (m - mean)) / ALPHA_DEN
+        h = m - m_bar
+        E_prime = energy + (h * h)
+        cnt_prime = count + 1
+    within
+        (
+            -- Case 1: Window size not yet reached
+            (cnt_prime < WINDOW_SIZE) & 
+                ShakeDetect(m_bar, E_prime, cnt_prime, shake)
+        )
+        []
+        (
+            -- Case 2: Window size reached, evaluate energy average
+            (cnt_prime == WINDOW_SIZE) &
+            let
+                avg = E_prime / WINDOW_SIZE
+                
+                -- Boolean equation mapping exactly to the formal specification
+                newShake = ((shake == false) and (avg > THRESHOLD_ON)) or 
+                           ((shake == true)  and (avg <= THRESHOLD_OFF))
+            within
+                (
+                    -- Subcase A: State changed to TRUE
+                    ((newShake != shake) and (newShake == true)) & 
+                        result_chan!1 -> ShakeDetect(m_bar, 0, 0, true)
+                )
+                []
+                (
+                    -- Subcase B: State changed to FALSE
+                    ((newShake != shake) and (newShake == false)) & 
+                        result_chan!0 -> ShakeDetect(m_bar, 0, 0, false)
+                )
+                []
+                (
+                    -- Subcase C: State did not change
+                    (newShake == shake) & 
+                        ShakeDetect(m_bar, 0, 0, shake)
+                )
+        )
+
+-- =========================================================
+-- UI Process
+-- =========================================================
+-- Reads a result and pushes it to an observable print event
+UI = result_chan?r -> print_!r -> UI
+
+-- =========================================================
+-- System Composition
+-- =========================================================
+-- The entire pipeline connected via synchronisation channel closures
+SYSTEM =
+    (
+        (
+            (
+                ENV 
+                [| {| g_trigger_chan |} |] 
+                L3g4200d
+            )
+            [| {| msg_chan |} |]
+            ShakeDetect(0, 0, 0, false)
+        )
+        [| {| result_chan |} |]
+        UI
+    )
+
