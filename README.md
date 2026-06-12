@@ -2,7 +2,7 @@
 # CSP4CMSIS Shake Detection  
 ### NUCLEO-F401RE + L3G4200D Gyroscope
 
-This project demonstrates interrupt-driven shake detection on the STM32 NUCLEO-F401RE using the L3G4200D gyroscope.
+This project demonstrates interrupt-driven shake detection on the STM32 NUCLEO-F401RE using the L3G4200D gyroscope. The corresponding formal Communicating Sequential Processes (CSP) model can be found [here](https://github.com/OliverFaust/CSP4CMSIS-shake-detection-NUCLEO-F401RE-/tree/main/Formal%20model). 
 
 It uses:
 
